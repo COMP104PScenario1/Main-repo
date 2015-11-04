@@ -20,7 +20,6 @@ development:
 test:
   <<: *default
   database: todo_list_test
-  username: rsoultanaev
 
 production:
   <<: *default
