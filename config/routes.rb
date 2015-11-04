@@ -1,8 +1,10 @@
 Rails.application.routes.draw do
+	root 'todolist#show'
+
 	get 'todolist/:username' => 'todolist#show'
 	
-	get 'signup' => 'users#new'
-	resources :users
+	get 'signup' => 'actualusers#new'
+	resources :actualusers
 	
 	
 	
