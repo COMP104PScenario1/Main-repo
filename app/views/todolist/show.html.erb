@@ -1,0 +1,22 @@
+<div class="header">
+  <div class="container">
+    <h1>Todolist</h1>
+  </div>
+</div>
+
+<div class="tag">
+  <div class="container">
+    <h2><%= @user.username %></h2>
+
+    <div class="cards row">
+      <% @listelements.each do |l| %>
+      <div class="card col-xs-4">
+        <h2><%= l.time %></h2>
+        <p><%= l.task %></p>
+      </div>
+      <% end %>
+    </div>
+
+  </div>
+</div>
+
