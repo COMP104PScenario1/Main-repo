@@ -1,10 +1,13 @@
 Rails.application.routes.draw do
 	root 'todolist#show'
 
-	get 'todolist/:username' => 'todolist#show'
+	#get 'todolist/:username' => 'todolist#show'
 	
 	get 'signup' => 'actualusers#new'
 	resources :actualusers
+	
+	get 'login' => 'sessions#new'
+	post 'login' => 'sessions#create'
 	
 	
 	

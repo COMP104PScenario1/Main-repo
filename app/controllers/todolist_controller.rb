@@ -1,6 +1,6 @@
 class TodolistController < ApplicationController
 	def show
-		@user = User.find_by(username: 'robert')
-		@listelements = @user.listelements
+		@actualuser = Actualuser.find(session[:user_id])
+		@actuallistelements = @actualuser.actuallistelements
 	end
 end
