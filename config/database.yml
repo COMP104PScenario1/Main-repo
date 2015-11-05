@@ -23,4 +23,7 @@ test:
 
 production:
   <<: *default
-  database: todo_list 
+  database: todo_list
+  host: studtbickers-p.cs.ucl.ac.uk
+  username: todo_list_app
+  password: todo_list_app 
