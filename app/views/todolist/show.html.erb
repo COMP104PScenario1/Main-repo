@@ -7,7 +7,7 @@
 <div class="tag">
   <div class="container">
     <h2><%= @actualuser.username %></h2>
-<!--
+
     <div class="cards row">
       <% @actuallistelements.each do |l| %>
       <div class="card col-xs-4">
@@ -16,7 +16,9 @@
       </div>
       <% end %>
     </div>
--->
+    
+    <%= link_to 'New Task', "actuallistelements/new" %>
+
   </div>
 </div>
 

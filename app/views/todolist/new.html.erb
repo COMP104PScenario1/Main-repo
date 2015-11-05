@@ -1,0 +1,26 @@
+<div class="header">
+  <div class="container">
+    <h1>Messenger</h1>
+  </div>
+</div>
+
+<div class="create">
+  <div class="container">
+    
+    <%= form_for(@actuallistelement) do |f| %>
+    	<div class="field">
+        	<%= f.label :Time %> <br>
+        	<%= f.text_area :time %>
+    	</div>
+    	<div class="field">
+        	<%= f.label :Task %> <br>
+        	<%= f.text_area :task %>
+    	</div>
+    	<%= f.hidden_field :actualuser_id, value: session[:user_id] %>
+    	<div class="actions">
+      		<%= f.submit "Create" %>
+    	</div>
+    <% end %>
+    
+  </div>
+</div>
