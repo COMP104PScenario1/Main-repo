@@ -21,6 +21,13 @@ test:
   <<: *default
   database: todo_list_test
 
+staging:
+  <<: *default
+  database: todo_list
+  host: studmwaine-p.cs.ucl.ac.uk
+  username: todo_list_app
+  password: todo_list_app
+
 production:
   <<: *default
   database: todo_list
