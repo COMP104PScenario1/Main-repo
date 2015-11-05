@@ -15,7 +15,7 @@
         <p><%= l.task %></p>
       </div>
       <%= link_to 'Edit', edit_actuallistelement_path(l) %>
-      <%= button_to 'Remove', actuallistelement_path(l), :method => :delete %>
+      <%= link_to 'Remove', actuallistelement_path(l), :method => :delete %>
       <% end %>
     </div>
     
