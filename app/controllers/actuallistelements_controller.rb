@@ -20,4 +20,9 @@ class ActuallistelementsController < ApplicationController
 	def actuallistelement_edit_params
 		params.require(:actuallistelement).permit(:time, :task)
 	end
+	
+	def destroy
+		@actuallistelement = Actuallistelement.find(params[:id]).destroy
+		redirect_to(:action => 'show', :id => @actuallistelement.id)
+	end
 end
