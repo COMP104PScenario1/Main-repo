@@ -5,8 +5,10 @@ Rails.application.routes.draw do
 
 	get 'actuallistelements' => 'todolist#show'
 	get 'actuallistelements/new' => 'todolist#new'
-	#resources :actuallistelements
 	post 'actuallistelements' => 'todolist#create'
+	
+	resources :actuallistelements
+	
 	
 	get 'signup' => 'actualusers#new'
 	
