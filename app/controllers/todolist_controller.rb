@@ -1,4 +1,6 @@
 class TodolistController < ApplicationController
+	before_action :require_user, only: [:show, :new, :create]
+
 	def show
 		@actualuser = Actualuser.find(session[:user_id])
 		@actuallistelements = @actualuser.actuallistelements

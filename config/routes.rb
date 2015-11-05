@@ -1,14 +1,18 @@
 Rails.application.routes.draw do
+	resources :actualusers
+	
+	root 'todolist#show'
+
 	get 'actuallistelements' => 'todolist#show'
 	get 'actuallistelements/new' => 'todolist#new'
 	#resources :actuallistelements
 	post 'actuallistelements' => 'todolist#create'
 	
 	get 'signup' => 'actualusers#new'
-	resources :actualusers
 	
 	get 'login' => 'sessions#new'
 	post 'login' => 'sessions#create'
+	delete 'logout' => 'sessions#destroy'
 	
 	
 	
