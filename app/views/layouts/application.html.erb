@@ -1,10 +1,70 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Scenario1</title>
+<title>Scenario1</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
+  <style>
+h1
+{
+     	text-align: center;
+	text-transform:capitalize;
+	font-family: "Helvetica";
+	color: red; 
+	font-size: 2.5em;
+
+}
+p1
+{
+	font-family: "Helvetica";
+	color: #5d002f; 
+	font-size: 1.7em;
+
+}
+p
+{
+	font-family: "Helvetica";
+	color: #5d002f; 
+	font-size: 1.5em;
+	
+}
+h3
+{
+	text-align: center;
+	font-family: "Helvetica";
+	color: #5d002f; 
+	font-size: 1.5em;
+
+}
+.field
+{
+	text-transform:capitalize;
+	text-align: center;
+	font-family: "Helvetica";
+	color: #5d002f; 
+	font-size: 1.5em;
+}
+.actions
+{
+	margin-top: 20px;
+	text-align: center;
+	font-family: "Helvetica";
+	color: #5d002f; 
+	font-size: 1.5em;
+}
+a:visited
+{
+color: #5d002f;
+}
+row{
+	align: center;
+}
+</style>
 </head>
 <body>
 
@@ -15,8 +75,8 @@
   </ul> 
 <% else %> 
   <ul> 
-    <li><%= link_to "Login", 'login' %></a></li> 
-    <li><%= link_to "Signup", 'signup' %></a></li> 
+    <li><%= link_to "Login", 'login', style: 'color:#333333; font-family:helvetica;' %></li> 
+    <li><%= link_to "Signup", 'signup', style: 'color:#333333; font-family:helvetica;' %></li> 
   </ul> 
 <% end %>
 
