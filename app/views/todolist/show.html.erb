@@ -15,7 +15,7 @@
         <div class="col-md-8"><%= l.task %></div>
         <div class='btn-group col-md-2'>
       <%= link_to 'Edit', edit_actuallistelement_path(l), :class => 'btn btn-default'%>
-      <%= link_to 'Remove', actuallistelement_path(l), :method => :delete, :class => 'btn btn-default' %>
+      <%= button_to 'Remove', actuallistelement_path(l), :method => :delete, :class => 'btn btn-default' %>
         </div>
       </div>
       <% end %>
